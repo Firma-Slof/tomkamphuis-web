@@ -1,9 +1,10 @@
 {
   "name": "tomkamphuis.web",
   "version": "0.0.1",
+  "main": "sveltekit/index.js",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "build": "npx rimraf public && svelte-kit build --verbose",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -27,7 +28,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@sveltejs/adapter-node": "^1.0.0-next.39",
+    "svelte-adapter-firebase": "^0.10.5",
     "sveltestrap": "^5.5.1"
   }
 }
