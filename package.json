@@ -1,7 +1,6 @@
 {
   "name": "tomkamphuis.web",
   "version": "0.0.1",
-  "main": "sveltekit/index.js",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "npx rimraf public && svelte-kit build --verbose",
