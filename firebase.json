@@ -1,6 +1,6 @@
 {
   "functions": {
-    "source": ".",
+    "source": "functions",
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
       "npm --prefix \"$RESOURCE_DIR\" run build"
@@ -8,7 +8,7 @@
     "runtime": "nodejs14"
   },
   "hosting": {
-    "public": "public",
+    "public": "client/build",
     "ignore": [
       "firebase.json",
       "**/.*",
